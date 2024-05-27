@@ -1,11 +1,9 @@
+import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -16,84 +14,75 @@ import javax.swing.JPanel;
  * @author penarubia
  */
 public class availablevehicles extends JFrame {
-        private JLabel lblAvailableVehicle, lblTypes, lblChoose;  
-        private JFrame f=new JFrame("Available Vehicles");
-        private JButton btnMuscle,btnSUV,btnVan,btnHatchback,btnPickup;
-   availablevehicles(){
+        public JLabel lblAvailableVehicle, lblTypes, lblChoose;  
+        public JButton btnMuscle,btnSUV,btnVan,btnHatchback,btnPickup;
+        public JFrame fr=new JFrame("Available Vehicle");
+
+       availablevehicles(){
+       fr.setSize(500,500);
+       fr.getContentPane().setBackground(Color.gray);
+       fr.setDefaultCloseOperation(EXIT_ON_CLOSE);
        
-       //setsize
-       f.setSize(450,400);
        
-       lblAvailableVehicle=new JLabel("Available Vehicles");
-       lblAvailableVehicle.setBounds(130,20,190,30);
-       lblAvailableVehicle.setFont(new Font("Perpetua Titling MT", Font.BOLD,15));
-              
-       lblTypes=new JLabel("Types");
-       lblTypes.setBounds(190,40,190,30);
-       lblTypes.setFont(new Font("Perpetua Titling MT", Font.BOLD,15));
+       lblAvailableVehicle=new JLabel("AVAILABLE TYPES OF VEHICLE");
+       lblAvailableVehicle.setBounds(110,20,300,30);
+       lblAvailableVehicle.setFont(new Font("Arial", Font.BOLD,18));
+       lblAvailableVehicle.setForeground(Color.WHITE);
        
+       lblTypes=new JLabel("CHOOSE WHAT TYPE OF CAR:");
+       lblTypes.setBounds(146,45,190,50);
+       lblTypes.setFont(new Font("Arial", Font.BOLD,10));
+       lblTypes.setForeground(Color.WHITE);
+
        
        //buttons
-      btnMuscle = new JButton("Muscle Car");
-       btnMuscle.setBounds(142,75,160,30);
+       btnMuscle = new JButton("MUSCLE CAR");
+       btnMuscle.setBounds(142,85,160,50);
+       btnMuscle.setBackground(Color.BLACK);
+       btnMuscle.setForeground(Color.WHITE);
 
-        btnSUV = new JButton("SUV Car");
-       btnSUV.setBounds(142,115,160,30); 
+       btnSUV = new JButton("SUV CAR");
+       btnSUV.setBounds(142,145,160,50); 
+       btnSUV.setBackground(Color.BLACK);
+       btnSUV.setForeground(Color.WHITE);
+
        
-        btnVan = new JButton("Van Car");
-       btnVan.setBounds(142,155,160,30);
+       btnVan = new JButton("VAN CAR");
+       btnVan.setBounds(142,205,160,50);
+       btnVan.setBackground(Color.BLACK);
+       btnVan.setForeground(Color.WHITE);
        
-        btnHatchback = new JButton("Hatchback Car");
-       btnHatchback.setBounds(142,195,160,30);
+       btnHatchback = new JButton("HATCHBACK CAR");
+       btnHatchback.setBounds(142,265,160,50);
+       btnHatchback.setBackground(Color.BLACK);
+       btnHatchback.setForeground(Color.WHITE);
        
-        btnPickup = new JButton("Pickup Car");
-       btnPickup.setBounds(142,235,160,30);
+       btnPickup = new JButton("PICKUP CAR");
+       btnPickup.setBounds(142,325,160,50);
+       btnPickup.setBackground(Color.BLACK);
+       btnPickup.setForeground(Color.WHITE);
 
        
 
        //f.add
-       f.add(lblAvailableVehicle);
-       f.add(lblTypes);
-       f.add(btnMuscle);
-       f.add(btnSUV);
-       f.add(btnVan);
-       f.add(btnHatchback);
-       f.add(btnPickup);
-       
+       fr.add(lblAvailableVehicle);
+       fr.add(lblTypes);
+       fr.add(btnMuscle);
+       fr.add(btnSUV);
+       fr.add(btnVan);
+       fr.add(btnHatchback);
+       fr.add(btnPickup);
        //f.set
-       f.setLayout(null);
-       
-       f.setVisible(true);
-       
-       f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
-   
+       fr.setLayout(null);
+       fr.setVisible(true);
+           fr.setResizable(false);
+
  
    
    }
 
 public  void actionPerformed(ActionEvent e){
-    if(e.getSource() == btnMuscle){
-JFrame frame2 = new JFrame ("");
-frame2.setVisible (true);
-JLabel label = new JLabel("");
-frame2.setSize(400,400);
-JPanel panel = new JPanel();
+    
+}
 
-frame2.add(panel);
-panel.add(label);
-        
-            
-}
-    else if (e.getSource() == btnSUV){
-    JFrame frame3 = new JFrame ("");
-frame3.setVisible (true);
-JLabel label = new JLabel("");
-frame3.setSize(400,400);
-JPanel panel = new JPanel();
-
-frame3.add(panel);
-panel.add(label);
-        
-}
-}
 }

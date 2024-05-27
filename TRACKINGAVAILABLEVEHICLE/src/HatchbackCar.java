@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.*;
 import javax.swing.JButton;
@@ -25,10 +26,10 @@ public class HatchbackCar implements ActionListener{
      fr.setSize(600,350);
      fr.setLayout(null);
      fr.setDefaultCloseOperation(fr.EXIT_ON_CLOSE);
-       
-     lblAvailableHatchBack=new JLabel("List of Available Hatchback Car");
-     lblAvailableHatchBack.setBounds(150,20,330,30);
-     lblAvailableHatchBack.setFont(new Font("Perpetua Titling MT", Font.BOLD,15));
+     
+    lblAvailableHatchBack=new JLabel("List of Available Hatchback Car");
+    lblAvailableHatchBack.setBounds(150,20,330,30);
+    lblAvailableHatchBack.setFont(new Font("Perpetua Titling MT", Font.BOLD,15));
             
     lblMazda2 = new JLabel("Mazda 2");
     lblMazda2.setBounds(227, 60, 120, 30);
@@ -52,8 +53,8 @@ public class HatchbackCar implements ActionListener{
     
     //pricelist
     lblPrice=new JLabel("Price");
-     lblPrice.setBounds(352,40,290,30);
-     lblPrice.setFont(new Font("Arial", Font.BOLD,15));
+    lblPrice.setBounds(352,40,290,30);
+    lblPrice.setFont(new Font("Arial", Font.BOLD,15));
      
     lblPMazda2 = new JLabel("10,000");
     lblPMazda2.setBounds(350, 60, 150, 30);
