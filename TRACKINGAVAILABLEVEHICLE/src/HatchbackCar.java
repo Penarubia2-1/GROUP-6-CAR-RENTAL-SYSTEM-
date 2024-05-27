@@ -24,7 +24,7 @@ public class HatchbackCar implements ActionListener{
      HatchbackCar(){
          
 
-     fr.setSize(600,350);
+     fr.setSize(500,350);
      fr.setLayout(null);
      fr.setDefaultCloseOperation(fr.EXIT_ON_CLOSE);
      
