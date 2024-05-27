@@ -18,6 +18,7 @@ public class availablevehicles extends JFrame {
         public JButton btnMuscle,btnSUV,btnVan,btnHatchback,btnPickup;
         public JFrame fr=new JFrame("Available Vehicle");
 
+        
        availablevehicles(){
        fr.setSize(500,500);
        fr.getContentPane().setBackground(Color.gray);
