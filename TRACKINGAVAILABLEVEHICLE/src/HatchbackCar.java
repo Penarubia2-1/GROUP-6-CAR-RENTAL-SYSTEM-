@@ -22,6 +22,7 @@ public class HatchbackCar implements ActionListener{
      private JButton btnadd,btndelete,btnadd1,btndelete1,btnadd2,btndelete2,btnadd3,btndelete3,btnadd4,btndelete4,btnnext,btnback;
      
      HatchbackCar(){
+         
 
      fr.setSize(600,350);
      fr.setLayout(null);
