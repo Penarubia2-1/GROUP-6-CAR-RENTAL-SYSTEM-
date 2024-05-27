@@ -27,6 +27,8 @@ public class HatchbackCar implements ActionListener{
      fr.setLayout(null);
      fr.setDefaultCloseOperation(fr.EXIT_ON_CLOSE);
      
+     
+     
     lblAvailableHatchBack=new JLabel("List of Available Hatchback Car");
     lblAvailableHatchBack.setBounds(150,20,330,30);
     lblAvailableHatchBack.setFont(new Font("Perpetua Titling MT", Font.BOLD,15));
